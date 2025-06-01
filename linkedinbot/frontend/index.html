@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Bot Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <img src="/static/assets/Robot.png" alt="LinkedIn Bot" class="robot-image">
+        </div>
+        <div class="right-panel">
+            <h1>Linked In BOT</h1>
+            <p>Let's Login to Your Account</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Email or Phone</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your Email or Phone" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="button-group">
+                    <!-- Add loading state -->
+                    <button type="submit" class="btn btn-primary" id="cvScrapeBtn">
+                        <span id="cvScrapeText">CV Scrape</span>
+                        <span id="cvScrapeSpinner" class="spinner hidden"></span>
+                    </button>
+                    <button type="submit" class="btn btn-secondary" id="jobApplyBtn">Job Apply</button>
+                </div>
+            </form>
+            <div id="status"></div>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

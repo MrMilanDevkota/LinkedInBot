@@ -1,0 +1,180 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    text-align: left;
+}
+
+.left-panel {
+    width: 40%;
+    background-color: #90b5d4;
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.robot-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.right-panel {
+    width: 60%;
+    padding: 60px;
+    border-radius: 0 12px 12px 0;
+}
+
+h1 {
+    color: #0078d7;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+p{
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #0078d7;
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 48%;
+}
+
+.btn-primary {
+    background-color: #0078d7;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #005a99;
+}
+
+.btn-secondary {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #ccc;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#status.success {
+    color: green;
+}
+
+#status.error {
+    color: red;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+        padding: 30px;
+    }
+
+    .left-panel {
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .right-panel {
+        width: 100%;
+        border-radius: 0 0 12px 12px;
+        padding: 30px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    /* Add loading spinner */
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+}

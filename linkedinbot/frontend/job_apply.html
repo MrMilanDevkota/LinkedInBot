@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Bot - Auto Job Apply</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/job_apply.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="form-group full-width">
+                <label for="resume">Upload Resume</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+            </div>
+            <div class="editable-json-container">
+                <h3>Edit Your Data</h3>
+                <textarea id="json-editor"></textarea>
+                <button id="save-json-btn">Save Data</button>
+            </div>
+        </div>
+        <div class="right-column">
+            <h1>LinkedIn Bot to Auto Job Apply</h1>
+            <h2>Fill to Start Auto Job Apply</h2>
+            <form id="job-apply-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <!-- <label for="gemini-api-key">Gemini API Key</label> -->
+                        <!-- <input type="text" id="gemini-api- key" name="gemini-api-key" placeholder="Enter Gemini API Key"> -->
+                        <label for="job-title">Job Title</label>
+                        <input type="text" id="job-title" name="job-title" placeholder="Enter Job Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="job-location">Job Location</label>
+                        <input type="text" id="job-location" name="job-location" placeholder="Enter Job Location">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="text" id="phone-number" name="phone-number" placeholder="Enter Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="max-applications">Max Applications</label>
+                        <input type="number" id="max-applications" name="max-applications" placeholder="Enter Max Applications">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="user-website">User Website</label>
+                        <input type="text" id="user-website" name="user-website" placeholder="Enter User Website">
+                    </div>
+
+                </div>
+                <div class="button-row">
+                    <button id="back-to-login" type="button">Back</button>
+                    <button id="start-auto-apply" type="submit">Start Auto Job Apply</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/static/js/job_apply.js"></script>
+</body>
+</html>
