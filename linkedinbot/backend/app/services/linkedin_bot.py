@@ -1,11 +1,14 @@
 # selenium , automation logic 
 import time
+import random 
+import json 
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
+from .app_process import load_resume_data, handle_application_process
 
 def navigate_to_jobs_and_search(driver, job_title, location):
     """Navigate to LinkedIn Jobs and search using the specific input elements"""
